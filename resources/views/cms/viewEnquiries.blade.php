@@ -23,36 +23,36 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title mt-0 mb-1">Customer</h4>
+                                        <h4 class="header-title mt-0 mb-1">Enquiry</h4>
                                         <p class="sub-header">
-                                            View Customer
+                                            View Enquiry
                                          
                                         </p>
 
                                         <table id="basic-datatable" class="table dt-responsive nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>Id</th>
-                                                    <th>Name</th>
-                                                    <th>Address</th>
-                                                    <th>contact</th>
+                                                    <th>Customer_Id</th>
+                                                    <th>Customer_Name</th>
+                                                    <th>Messege</th>
                                                     <th>Status</th>
+                                                    <th>Timestamp</th>
                                                     <th>Action</th>
                                                     
                                                 </tr>
                                             </thead>
                                               <tbody>
-                                                @foreach($customers as $customer)
+                                                @foreach($enquiries as $enquiry)
                                                 <tr>
-                                                    <td>{{ $customer->id }}</td>
-                                                    <td>{{ $customer->name }}</td>
-                                                    <td>{{ $customer->address }}</td>
-                                                    <td>{{ $customer->contact }}</td>
-                                                   <td>{{ $customer->status }}</td>
+                                                    <td>{{ $enquiry->customer_id }}</td>
+                                                    <td>{{ $enquiry->customer_name }}</td>
+                                                    <td>{{ $enquiry->messege }}</td>
+                                                    <td>{{ $enquiry->timestamp }}</td>
+                                                   <td>{{ $enquiry->action }}</td>
                                                     <td>
-                                                        <a href="/editCustomer/{{ $customer->id }}"
+                                                        <a href="/editEnquiry/{{ $enquiry->customer_id }}"
                                                             class="btn btn-warning">Edit</a>
-                                                        <a href="/deleteCustomer/{{$customer->id}}"
+                                                        <a href="/deleteEnquiry/{{$enquiry->customer_id}}"
                                                             class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>

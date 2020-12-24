@@ -20,31 +20,29 @@
                         
                        
 
-                            <div class="col-xl-6">
+                            <div class="col-xl-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5>Customer</h5>
-                                        <span>Add Customer</span>                                   
-                                           
-                                    
-                                        <form class="form-horizontal" action="/insertCustomer" method="POST">
+                                        <h5>Enquiry</h5>
+                                        <span>Add Enquiry</span>
+                                        <form class="form-horizontal" action="/insertEnquiry" method="POST">
                                             @csrf 
                                             <div class="form-group row mb-3">
-                                                <label for="inputEmail3" class="col-3 col-form-label"> Name</label>
+                                                <label for="inputEmail3" class="col-3 col-form-label"> Customer Id</label>
                                                 <div class="col-9">
-                                                    <input type="text" class="form-control" id="inputEmail3" required name='name'placeholder="enter customer name">
+                                                    <input type="number" class="form-control" id="inputEmail3" required name='customer_id'placeholder="enter customer id">
                                                 </div>
                                             </div>
                                             <div class="form-group row mb-3">
-                                                <label for="inputPassword3" class="col-3 col-form-label">Address</label>
+                                                <label for="inputPassword3" class="col-3 col-form-label">Customer Name</label>
                                                 <div class="col-9">
-                                                    <input type="text" class="form-control" id="inputPassword3" required name='address' placeholder="enter customer address">
+                                                    <input type="text" class="form-control" id="inputPassword3" required name='customer_name' placeholder="enter customer name">
                                                 </div>
                                             </div>
                                             <div class="form-group row mb-3">
-                                                <label for="inputPassword5" class="col-3 col-form-label">Contact</label>
+                                                <label for="inputPassword5" class="col-3 col-form-label">Messege</label>
                                                 <div class="col-9">
-                                                    <input type="number" class="form-control" id="inputPassword5" required  name='contact' placeholder="enter customer contact number">
+                                                    <input type="text" class="form-control" id="inputPassword5" required  name='messege' placeholder="enter messege">
                                                 </div>
                                             </div>
                   
@@ -55,6 +53,8 @@
                                                 </div>
                                             </div>
                                         </form>
+                                          
+                                      
 
                                     </div>  <!-- end card-body -->
                                 </div>  <!-- end card -->

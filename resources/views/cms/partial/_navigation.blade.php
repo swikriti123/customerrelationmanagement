@@ -80,10 +80,10 @@
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
                         <li>
-                            <a href="tables-basic.html">Add Enquiry</a>
+                            <a href="/addEnquiry">Add Enquiry</a>
                         </li>
                         <li>
-                            <a href="tables-datatables.html">View Enquiry</a>
+                            <a href="/viewEnquiries">View Enquiry</a>
                         </li>
                     </ul>
                 </li>
