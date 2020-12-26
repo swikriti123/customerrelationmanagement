@@ -18,42 +18,45 @@
                             </div>
                         </div>
                         
-                        
                        
 
-                            <div class="col-xl-12">
+                            <div class="col-xl-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5>Enquiry</h5>
-                                        <span>Edit Enquiry</span>
-                                        <form class="theme-form" action="/updateEnquiry" method="POST">   
-                                            @csrf  
-                                           <div class="form-group row mb-3">
-                                                <label for="inputEmail3" class="col-3 col-form-label"> Customer Id</label>
-                                                <div class="col-9">
-                                                    <input type="number" class="form-control" id="inputEmail3" required name='customer_id'placeholder="enter customer id " hidden  value="{{$enquiries->customer_id}}">
-                                                </div>
-                                           </div>
-                                            <div class="form-group row mb-3">
-                                                <label for="inputEmail3" class="col-3 col-form-label">Customer Name </label>
-                                                <div class="col-9">
-                                                    <input type="text" class="form-control" id="inputEmail3" required name='customer_name'placeholder="enter customer name"  value="{{$enquiries->customer_name}}">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row mb-3">
-                                                <label for="inputPassword3" class="col-3 col-form-label">Messege</label>
-                                                <div class="col-9">
-                                                    <input type="text" class="form-control" id="inputPassword3" required name='messege' placeholder="enter messege"  value="{{$enquiries->messege}}">
-                                                </div>
-                                            </div>
+                                        <h5>Category</h5>
+                                        <span>Add Category</span>                                   
                                            
-                  
+                                    
+                                        <form class="form-horizontal" action="/updateCategory" method="POST">
+                                            @csrf 
+
+                                            <div class="form-group row mb-3">
+                                                <label for="inputEmail3" class="col-3 col-form-label"> Id</label>
+                                                <div class="col-9">
+                                                    <input type="number" class="form-control" id="inputEmail3"   hidden  required name='id'placeholder="enter category id"  value="{{$categories->id}}">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row mb-3">
+                                                <label for="inputEmail3" class="col-3 col-form-label"> Name</label>
+                                                <div class="col-9">
+                                                    <input type="text" class="form-control" id="inputEmail3" required name='name'placeholder="enter category name"  value="{{$categories->name}}">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group row mb-3">
+                                                <label for="inputEmail3" class="col-3 col-form-label"> Image</label>
+                                                <div class="col-9">
+                                                    <input type="file" class="form-control" id="inputEmail3"  name='image'placeholder="choose image "   value="{{$categories->image}}">
+                                                </div>
+                                            </div>
+
+
                                             <div class="form-group mb-0 justify-content-end row">
                                                 <div class="col-9">
-                                                    <button class="btn btn-primary">Update</button>  
-                                                    
+                                                    <button class="btn btn-primary">Update</button>
                                                     <button class="btn btn-secondary">Cancel</button>
-                                                  
                                                 </div>
                                             </div>
                                         </form>

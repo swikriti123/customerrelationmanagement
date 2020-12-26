@@ -27,7 +27,6 @@ class CustomerController extends Controller
         $customers->save();
         return redirect('viewCustomers')->with('New Customer added Succesfully');
     }
-
   
     public function editCustomer($id)
     {
@@ -36,24 +35,25 @@ class CustomerController extends Controller
         return view('cms.editCustomer',compact('customers','title'));
     }
 
-  public function updateCustomer(Request $request)
-  {
-      try{
-          $customers=Customer::find($request['id']);
-          $customers->name=$request['name'];
-          $customers->address=$request['address'];
-          $customers->contact=$request['contact'];
-          $customers->update();
-      }catch(Throwable $e){
-          dd($e->getMessage());
-      }
-      return redirect('viewCustomers')->with('customersuccesfully updated');
- }
-
+    public function updateCustomer(Request $request)
+    {
+        try{
+            $customers=Customer::find($request['id']);
+            $customers->name=$request['name'];
+            $customers->address=$request['address'];
+            $customers->contact=$request['contact'];
+            $customers->update();
+        }catch(Throwable $e){
+            dd($e->getMessage());
+        }
+        return redirect('viewCustomers')->with('customersuccesfully updated');
+    }
 
     public function deleteCustomer($id)
-    {
-    Customer::find($id)->delete();
-    return back()->with('success','Product Deleted Succesfully');
-    }
+    
+        {
+            Customer::find($id)->delete();
+            return back()->with('success','Customer Deleted Succesfully');
+        }
+
 }

@@ -13,4 +13,12 @@ class AdminController extends Controller
     public function addEnquiry(){
         return view('cms.addEnquiry');
     }
+
+    public function addProduct(){
+        return view('cms.addProduct');
+    }
+
+    public function addCategory(){
+        return view('cms.addCategory');
+    }
 }

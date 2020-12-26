@@ -85,6 +85,47 @@
                         <li>
                             <a href="/viewEnquiries">View Enquiry</a>
                         </li>
+
+                        <li>
+                            <a href="javascript: void(0);" aria-expanded="false">
+                                <i data-feather="file-text"></i>
+                                <span> Product </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="/addProduct">Add Product</a>
+                                </li>
+                                <li>
+                                    <a href="/viewProduct">View Product</a>
+                                </li>
+                                
+        
+                                <li>
+                                    <a href="javascript: void(0);" aria-expanded="false">
+                                        <i data-feather="file-text"></i>
+                                        <span> Category </span>
+                                        <span class="menu-arrow"></span>
+                                    </a>
+                                    <ul class="nav-second-level" aria-expanded="false">
+                                        <li>
+                                            <a href="/addCategory">Add Category</a>
+                                        </li>
+                                        <li>
+                                            <a href="/viewCategory">View Category</a>
+                                        </li>
+                                        
+
+
+
+
+
+
+
+
+
+
+
                     </ul>
                 </li>
             </ul>

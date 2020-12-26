@@ -20,12 +20,12 @@ class EnquiryController extends Controller
     
     public function insertEnquiry(Request $request)
     {
-   $enquiries= new Enquiry();
-   $enquiries->customer_id=$request['customer_id'];
-   $enquiries->customer_name=$request['customer_name'];
-   $enquiries->messege=$request['messege'];
-   $enquiries->save();
-   return redirect('viewEnquiries')->with('new Enquiry added succesfully');
+        $enquiries= new Enquiry();
+        $enquiries->customer_id=$request['customer_id'];
+        $enquiries->customer_name=$request['customer_name'];
+        $enquiries->messege=$request['messege'];
+        $enquiries->save();
+        return redirect('viewEnquiries')->with('new Enquiry added succesfully');
     }
 
    
@@ -44,11 +44,12 @@ class EnquiryController extends Controller
             $enquiries->customer_name=$request['customer_name'];
             $enquiries->messege=$request['messege'];
             $enquiries->update();
+            return redirect('viewEnquiries')->with('Enquiry succesfully updated');
         }catch(Throwable $e){
             dd($e->getMessage());
         }
     
-        return redirect('viewEnquiries')->with('Enquiry succesfully updated');
+        
    
 
    
