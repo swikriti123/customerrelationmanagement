@@ -62,3 +62,13 @@ Route::get('/deleteEnquiry/{id}','EnquiryController@deleteEnquiry');
     Route::get('/editCategory/{id}','CategoryController@editCategory');
     Route::post('/updateCategory','CategoryController@updateCategory');
     Route::get('/deleteCategory/{id}','CategoryController@deleteCategory');
+
+
+
+    ///News
+    Route::get('/addNews','AdminController@addNews')->name('addNews');
+    Route::get('/viewNews','NewsController@viewNews')->name('viewNews');
+    Route::post('/insertNews','NewsController@insertNews');
+    Route::get('/editNews/{id}','NewsController@editNews');
+    Route::post('/updateNews', 'NewsController@updateNews');
+    Route::get('/deleteNews/{id}','NewsController@deleteNews');

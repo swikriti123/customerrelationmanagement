@@ -21,4 +21,9 @@ class AdminController extends Controller
     public function addCategory(){
         return view('cms.addCategory');
     }
+
+
+public function addNews(){
+    return view('cms.addNews');
+}
 }

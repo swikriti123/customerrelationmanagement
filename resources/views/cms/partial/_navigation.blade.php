@@ -3,10 +3,7 @@
         <img src="{{asset('cmsassets/assets/images/users/avatar-7.jpg')}}" class="avatar-sm rounded-circle mr-2" alt="Shreyu" />
         <img src="{{asset('cmsassets/assets/images/users/avatar-7.jpg')}}" class="avatar-xs rounded-circle mr-2" alt="Shreyu" />
 
-        <div class="media-body">
-            <h6 class="pro-user-name mt-0 mb-0">Nik Patel</h6>
-            <span class="pro-user-desc">Administrator</span>
-        </div>
+      
         <div class="dropdown align-self-center profile-dropdown-menu">
             <a class="dropdown-toggle mr-0" data-toggle="dropdown" href="index.html#" role="button" aria-haspopup="false"
                 aria-expanded="false">
@@ -87,18 +84,7 @@
                         </li>
 
                         <li>
-                            <a href="javascript: void(0);" aria-expanded="false">
-                                <i data-feather="file-text"></i>
-                                <span> Product </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <ul class="nav-second-level" aria-expanded="false">
-                                <li>
-                                    <a href="/addProduct">Add Product</a>
-                                </li>
-                                <li>
-                                    <a href="/viewProduct">View Product</a>
-                                </li>
+                           
                                 
         
                                 <li>
@@ -114,6 +100,22 @@
                                         <li>
                                             <a href="/viewCategory">View Category</a>
                                         </li>
+
+
+
+                                        <li>
+                                            <a href="javascript: void(0);" aria-expanded="false">
+                                                <i data-feather="file-text"></i>
+                                                <span> News </span>
+                                                <span class="menu-arrow"></span>
+                                            </a>
+                                            <ul class="nav-second-level" aria-expanded="false">
+                                                <li>
+                                                    <a href="/addNews">Add News</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/viewNews">View News</a>
+                                                </li>
                                         
 
 
